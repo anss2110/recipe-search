@@ -8,7 +8,7 @@ class navbar extends Component {
         return (
           <Navbar collapseOnSelect expand="lg" variant="light" bg='light'>
             <Container>
-              <Navbar.Brand href="#home">
+              <Navbar.Brand href="#home" className='ml-auto mr-auto'>
                 <img
                   alt=""
                   src={Logo}
@@ -16,9 +16,6 @@ class navbar extends Component {
                   className="d-inline-block align-top"
                 />
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse id="responsive-navbar-nav">
-              </Navbar.Collapse>
             </Container>
           </Navbar>
         );

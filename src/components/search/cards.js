@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Card, Accordion, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 export class MovieCard extends Component {
   render() {
@@ -30,8 +32,9 @@ export class MovieCard extends Component {
               <Accordion className='accordion container'>
                 <Card>
                   <Accordion.Toggle variant="link" eventKey="0" className='accordion button'>
-                    <Card.Header>
-                      Health Labels
+                    <Card.Header className='flex-1'>
+                      <p className='mb-0'>Health Labels</p>
+                      <FontAwesomeIcon className='dropdown-card' icon={faAngleDown} />
                     </Card.Header>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="0">
@@ -45,8 +48,9 @@ export class MovieCard extends Component {
                 <div className='mb-3' />
                 <Card>
                   <Accordion.Toggle variant="link" eventKey="1" className='accordion button'>
-                    <Card.Header>
-                      Ingredients
+                    <Card.Header className='flex-1'>
+                      <p className='mb-0'>Ingredients</p>
+                      <FontAwesomeIcon className='dropdown-card' icon={faAngleDown} />
                     </Card.Header>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="1">
@@ -60,8 +64,9 @@ export class MovieCard extends Component {
                 <div className='mb-3' />
                 <Card>
                   <Accordion.Toggle variant="link" eventKey="2" className='accordion button'>
-                    <Card.Header>
-                      Daily Nutrition
+                    <Card.Header className='flex-1'>
+                      <p className='mb-0'>Nutrition</p>
+                      <FontAwesomeIcon className='dropdown-card' icon={faAngleDown} />
                     </Card.Header>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="2">
@@ -69,13 +74,16 @@ export class MovieCard extends Component {
                       <div class='flex'>
                         <div className='center horizontal'>
                           <h5>Calories</h5>
-                          <h3>{parseInt(list.recipe.totalDaily.ENERC_KCAL.quantity)} %</h3>
+                          <h3>{parseInt(list.recipe.totalNutrients.ENERC_KCAL.quantity)} kcal</h3>
                         </div>
                         <div className='center horizontal'>
                           <h5>Fat</h5>
-                          <h3>{parseInt(list.recipe.totalDaily.FAT.quantity)} %</h3>
+                          <h3>{parseInt(list.recipe.totalNutrients.FAT.quantity)} g</h3>
                         </div>
                       </div>
+                      <center>
+                        <p style={{fontSize: 14}}>*Notes: per one serving</p>
+                      </center>
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>

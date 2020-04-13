@@ -331,6 +331,14 @@ $bpMobileSmall: 320px;
   margin: 0 28px;
 }
 
+.flex-1{
+  display: flex;
+}
+
+.dropdown-card {
+  margin-left: auto;
+}
+
 .center{
   &.horizontal{
     margin: 0 auto;
