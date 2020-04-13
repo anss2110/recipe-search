@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body {
+  height: 100%;
+}
+
+@import "~bootstrap/scss/bootstrap";
+@import "./common.scss";
+@import './custom.scss';
+@import './spinner.css';

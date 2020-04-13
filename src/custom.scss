@@ -1,0 +1,50 @@
+.bg-light {
+  background: #ffffff !important;
+  margin: auto;
+}
+
+.navbar {
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.21);
+  @include desktop{
+    height: 10vh;
+  }
+} 
+
+input.search-text.form-control {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.card-modified{
+  width: 31.5%;
+  padding: 1em;
+  height: max-content;
+}
+
+.detail-card{
+  width: 100%;
+  padding: 2em;
+  border-radius: 16px;
+}
+
+.card-body {
+  padding: 0px !important;
+  padding-top: 20px !important;
+  text-align: left;
+}
+
+.accordion > .card {
+  border: 0px !important;
+}
+
+.card-header {
+  border: 0px;
+  text-align: left;
+  background: #ffffff;
+  border-top: 0.5px solid;
+  border-bottom: 0.5px solid;
+  border-radius: 0 !important;
+  border-top: 0.5px solid rgba(0,0,0,0.3);
+  border-bottom: 0.5px solid rgba(0,0,0,0.3);
+  border-style: dashed;
+}

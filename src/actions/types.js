@@ -1,0 +1,4 @@
+export const SEARCH_RECIPE = 'SEARCH_RECIPE';
+export const FETCH_RECIPE_LIST = 'FETCH_RECIPE_LIST';
+// export const FETCH_RECIPE_DETAIL = 'FETCH_RECIPE_DETAIL';
+export const LOADING = 'LOADING';

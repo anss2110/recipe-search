@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
+import 'react-bootstrap';
+import '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/free-regular-svg-icons';
+import '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/react-fontawesome';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
