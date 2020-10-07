@@ -10,7 +10,7 @@ class footer extends Component {
               <Container>
                 <div className='mt-auto' />
                 <div className='footer-container'>
-                  <p className='footer-text'>Developed by anss2110, using ReactJS Hosted By Baharsah& all data provided by Edamam</p>
+                  <p className='footer-text'>RestAPI : edamam <br/> Developer : anss2210 <br/> Hosted to vercel by : Nugraha</p>
                   <div className='social-icon-container'>
                     <a href='https://facebook.com/The-Anss-Creations-854161568028162/'>
                       <FontAwesomeIcon className='social-icon' icon={faFacebook} />
