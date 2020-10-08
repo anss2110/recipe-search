@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form } from 'react-bootstrap';
-import ImgJumbotron from '../assets/jumbotron.jpg'
+import ImgJumbotron from '../assets/joi-shouma.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
